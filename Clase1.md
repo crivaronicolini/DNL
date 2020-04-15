@@ -22,36 +22,7 @@ Nos centramos en ODE's, pero si tengo derivadas parciales de un campo, puedo esc
 
 Si por ejemplo tengo la ecuación del oscilador armónico con término disipativo, puedo definir dxdt=v y por lo tanto dvdt=1/m(-beta.v - kx) y podemos hacer un campo vector. Si el campo vector es una función lineal de las variables decimos que el sistema es lineal. Caso contrario, el sistema es no lineal. (Caso no lineal, péndulo físico). Un conjunto de ODE's con campo vector suficiente suave da solución única. El espacio de fases es el espacio en el cual yo sé que un punto tiene solución única. En el caso del péndulo, tengo trayectorias cerradas (pequeñas oscilaciones), situación crítica (de -pi a pi) y trayectorias grandes que no son cerradas en el espacio de fase. También se tiene el caso de que haya término forzado, una fuerza externa donde aparece explícitamente el tiempo.
 
-
-#Ejemplo de péndulo, caso simple, de órbita cerrada, después hago para los otros casos:
-"""
-import numpy as np
-from scipy.integrate import odeint
-import matplotlib.pyplot as plt
-th0 = 0
-dxth0= 15
-x0 = th0, dxth0
-t = np.linspace(0, 20, 1000)
-g = 10
-l = 0.1
-
-def model(y, t):
-    x, v = y
-    dxdt = v
-    dvdt = -g/l*np.sin(x)
-    return dxdt, dvdt
-
-x, v = odeint(model, x0, t).T
-
-plt.plot(x,v)
-#plt.plot(t,x,label='theeta')
-#plt.plot(t,v,label='theeta_punto')
-plt.xlabel('theeta')
-plt.ylabel('theeta_punto')
-plt.legend()
-
-plt.show
-"""
+Hice un ejemplo computacional para el caso de péndulo simple, órbita cerrada, después hago para los otros casos.
 
 Sistema lineales: dxdt = ax
 Muestra la diferencia entre gráficos de x vs t y el espacio de fases de x.
