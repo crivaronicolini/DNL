@@ -1,4 +1,5 @@
-# Miércoles 15/04, Teoría:
+# Miércoles 15/04
+# Teoría:
 Bibliografía: Libro de Gabo, nos va a pasar los capítulos en Word.
 Recomienda el Strogatz (descargado de estufis)
 Guckenhemer, buen libro pero pesado y "poco juvenil" en el tema.
@@ -63,3 +64,7 @@ El capítulo del libro de Gabo muestra este ejemplo, lo resuelve analíticamente
 ¿Es posible aproximar a las soluciones de un problema no lineal por aquellas del problema linealizado? Sí (el libro de Gabo lo explica con detalle). Por ejemplo en caso del péndulo, aproximar sen(theeta) por theeta para pequeñas oscilaciones. Esta pregunta igual tiene su trampa, el problema no lineal debe cumplir ciertas condiciones. Está mostrando cómo se resuelve haciendo Taylor, mostrando cómo se comporta la derivada en ciertos puntos.
 
 ¿Cómo afectan nuestros parámetros al sistema? Dió el ejemplo de péndulo sobreamortiguado. Pregunta super importante para la materia.
+Mirar Hodgkin y Huxley. Leer un poco de orígen de las especies o Principios de Newton.
+
+# Práctica:
+Ejercicios de práctica computacional
