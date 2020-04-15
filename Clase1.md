@@ -38,4 +38,4 @@ El capítulo del libro de Gabo muestra este ejemplo, lo resuelve analíticamente
 Mirar Hodgkin y Huxley. Leer un poco de orígen de las especies o Principios de Newton.
 
 # Práctica:
-Ejercicios de práctica computacional
+Ejercicios de práctica computacional que subieron a la cuenta de Doppler en github.
